@@ -32,12 +32,10 @@ with app.app_context():
     db.session.add_all([m1, m2])
     db.session.commit()
 
-    # Add projects
+ 
     p1 = Project(title="XYZ Project Flask server",  budget=50000)
     p2 = Project(title="XYZ Project React UI", budget=100000)
     db.session.add_all([p1, p2])
     db.session.commit()
 
-    # Many-to-many relationship between employee and meeting
-
-    # Many-to-many relationship between employee and project through assignment
+    
